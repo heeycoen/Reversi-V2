@@ -509,6 +509,7 @@ namespace Reversi_V2
         //
         public void bordklik(object sender, MouseEventArgs mea)
         {
+            
             int x = mea.X, y = mea.Y;
             x /= (600 / Bord.Hoogte);
             y /= (600 / Bord.Hoogte);
@@ -794,7 +795,6 @@ namespace Reversi_V2
                 Bord.Beurt = 1;
             }
             bordpanel.Invalidate();
-            bordpanel.Refresh();
         }
         //
         //zet de ai uit
